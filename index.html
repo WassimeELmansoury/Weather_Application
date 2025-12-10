@@ -1,21 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>Weather APK</title>
+        <title>Météo Semaine</title>
         <link rel="stylesheet" href="style.css">
-
     </head>
     <body>
-        <!-- card gauche -->
-        <div class="weather-container">
-            <div class="card-gauche">
-                <h1 class="title">Météo semaine</h1>
-                <p class="local"></p>
-            </div>
-            <dir class="card-droite">
+        <h1 class="title">Météo Semaine</h1>
 
-            </dir>
+        <div class="meteo-container">
+            <!-- partie gauche -->
+            <section class="part-gouche">
+                <div class="situation-meteo">
+                    <img src="./images/cloud-sun.png" alt="icone météo">
+                    <div class="localisation-title">
+                    <p id="iconeLocal"><img src="./images/localisation.png" alt="localisation icone">Localisation</p>
+                    </div>
+                    <div class="recherch-tab">
+                        <input type="search" placeholder="Rechercher une ville" class="Recherche-input">
+                        <img src="./images/search.png" alt="recherche-ville">
+
+                    </div>
+                </div>
+
+            </section>
+                        
+            <!-- partie droite -->
+            <section class="part-droite">
+                <div>
+                    <div class="info-Haut">
+                        <div class="localisation-title">
+                            <p id="iconeLocal"><img src="./images/localisation.png" alt="localisation icone">Localisation</p>
+                        </div>
+                        <div class="date">Lundi, 12 Déc 2025</div>
+                    </div>
+                    
+                    <div class="Température">14°</div>
+                    <div class="condition">Nuageux</div>
+                    <div class="next-day">
+                        <div class="day">
+                            <img class="day-icon" src="./images/weather.png" alt="weather">
+                            <div class="day-name">Mar</div>
+                            <div class="day-temp">5°</div>
+                        </div>
+                        <div class="day">
+                            <img class="day-icon" src="./images/sun.png" alt="sun">
+                            <div class="day-name">Merc</div>
+                            <div class="day-temp">21°</div>
+                        </div>
+                        <div class="day">
+                            <img class="day-icon" src="./images/snow.png" alt="snow">
+                            <div class="day-name">Jeu</div>
+                            <div class="day-temp">11°</div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            
+            </section>            
+
+        
         </div>
     </body>
     <script src="script.js"></script>
