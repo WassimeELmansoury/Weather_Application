@@ -6,66 +6,71 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="background-image-blur"></div>
+
         <h1 class="title">Météo Semaine</h1>
 
         <div class="meteo-container">
-            <!-- partie gauche -->
+            
             <section class="part-gouche">
                 <div class="situation-meteo">
-                    <img src="./images/cloud-sun.png" alt="icone météo">
-                    <div class="localisation-title">
-                    <p id="iconeLocal"><img src="./images/localisation.png" alt="localisation icone">Localisation</p>
+                    <img src="./amcharts_weather_icons_1.0.0/animated/cloudy-day-3.svg" alt="icone météo">
+                    
+                    <div class="localisation-title-gouche">
+                    <p id="iconeLocal"><img src="./images/location.png" alt="localisation icone">Localisation</p>
                     </div>
-                    <div class="recherch-tab">
-                        <input type="search" placeholder="Rechercher une ville" class="Recherche-input">
-                        <img src="./images/search.png" alt="recherche-ville">
+                    <div class="search-container">
 
+                        <div class="recherch-tab">
+                            <input type="search" placeholder="Rechercher une ville" class="Recherche-input">
+                            <button class="button"><img src="./images/search.png" alt="recherche-ville"></button>
+    
+                        </div>
                     </div>
                 </div>
 
             </section>
                         
-            <!-- partie droite -->
             <section class="part-droite">
-                <div>
                     <div class="info-Haut">
-                        <div class="localisation-title">
-                            <p id="iconeLocal"><img src="./images/localisation.png" alt="localisation icone">Localisation</p>
+                        <div class="localisation-title-droite">
+                            <p id="iconeLocal"><img src="./images/location.png" alt="localisation icone">Localisation</p>
                         </div>
                         <div class="date">Lundi, 12 Déc 2025</div>
                     </div>
                         <div class="info-todaye">
-                        <div class="Température">14°</div>
-                        <div class="condition">Nuageux</div>
-                        <div class="Vitesse-Vent"><img src="./images/air.png" alt="Vitesse de Vent">5 km/h</div>
-                        <div class="Humidité"><img src="./images/water_drop.png" alt="Humidité">30 %</div>
-                    </div>
+                            <div class="meteo-info">
+                                <div class="Température">14°</div>
+                                <div class="condition">Nuageux</div>
+                            </div>
+                            <div class="weather-stats">
+                                <div class="Vitesse-Vent"><img src="./images/air.png" alt="Vitesse de Vent">5 km/h</div>
+                                <div class="Humidité"><img src="./images/water_drop.png" alt="Humidité">30 %</div>
+                            </div>
+                        </div>
                     <div class="next-day">
                         <div class="day">
-                            <img class="day-icon" src="./images/weather.png" alt="weather">
                             <div class="day-name">Mar</div>
+                            <img class="day-icon" src="./amcharts_weather_icons_1.0.0/animated/rainy-1.svg" alt="weather">
                             <div class="day-temp">5°</div>
                         </div>
                         <div class="day">
-                            <img class="day-icon" src="./images/sun.png" alt="sun">
                             <div class="day-name">Merc</div>
+                            <img class="day-icon" src="./amcharts_weather_icons_1.0.0/animated/day.svg" alt="sun">
                             <div class="day-temp">21°</div>
                         </div>
                         <div class="day">
-                            <img class="day-icon" src="./images/snow.png" alt="snow">
                             <div class="day-name">Jeu</div>
+                            <img class="day-icon" src="./amcharts_weather_icons_1.0.0/animated/snowy-6.svg" alt="snow">
                             <div class="day-temp">11°</div>
                         </div>
 
                     </div>
-                    
-                </div>
-            
-            </section>            
+                                        
+            </section>           
 
         
         </div>
-    </body>
+        </body>
     <script src="script.js"></script>
-
 </html>

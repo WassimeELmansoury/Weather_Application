@@ -1,0 +1,215 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+body{
+    background:url(./images/pexels-aj4xo-29584022.jpg);
+    background-size:cover;
+    background-position:center;
+    padding: 40px;
+    
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px); 
+    z-index: -1;  
+}
+.title {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #000;
+}
+.meteo-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.part-gouche , .part-droite {
+    border-width: 330px;
+    border-radius: 40px;
+    width: 400px;
+    height: 690px;
+       background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.15),
+            rgba(255, 255, 255, 0.15));
+}
+.situation-meteo img {
+    display: block;
+    width: 400px;
+    margin: 0 auto 20px auto;
+}
+.localisation-title-gouche {
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    font-size: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.localisation-title-droite{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 15px;
+}
+#iconeLocal img {
+    width: 20px;
+  height: 25px;
+}
+#iconeLocal {
+  display: flex;       
+  align-items: center;  
+  gap: 6px;             
+  font-weight: 900;
+
+}
+.date{
+    color: rgb(255, 255, 255);
+    font-size: 37px;
+}
+.recherch-tab {
+    display: flex;
+    width: 350px;
+    align-items: stretch;
+    border-color: #000000;            
+    gap: 8px;                  
+    background-color: #f0f0f0; 
+    padding: 5px 10px;
+    border-radius: 9px;
+    
+}
+.Recherche-input {
+    border: none;             
+    padding: 8px 35px 8px 10px;
+    font-size: 13px;
+    background-color: transparent; 
+}
+.recherch-tab .icon {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.recherch-tab img , .button {
+    border: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 20px;              
+    height: 20px;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-top: 3px;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+}
+.date{
+    display: flex;
+    justify-content: center;    
+}
+img.day-icon{
+    display: flex;
+    flex-wrap: nowrap;
+    width:50px;
+}
+#iconeLocal {
+  display: flex;
+  align-items: center;
+}
+#iconeLocal img {
+  width: 18px;
+  margin: 3px;
+}
+.Température{
+    display: flex;
+    justify-content: space-around;
+    font-size: 170px;
+    margin-right: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.condition{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: 20px;
+    color: #000000;
+    font-style: oblique;
+}
+.Vitesse-Vent{
+    display: flex;
+    font-size: 25px;
+    margin-right: 8px;
+    font-style:oblique;
+
+}
+.Vitesse-Vent img{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+.info-todaye {
+    display: flex;            
+    justify-content: space-between;
+    padding: 10px;
+}
+.weather-stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Humidité img{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+.Humidité{
+    display: flex;
+    font-size: 25px;
+    margin-right: 8px;
+    font-style:oblique;
+    margin-top: 15px;
+}
+.next-day{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 190px;
+    font-size: 29px;
+    font-family: cursive;
+
+}
+.day img{
+    width: 60px;
+    width: 73px;
+    height: 70px;
+    top: 81dvh;
+    margin-top: -13px;
+    margin-bottom: -6px;
+}
+.day{
+        width: 93px;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    height: 143px;
+    border-radius: 15px;
+ 
+    background: rgb(255, 255, 255, 0.1);
+}
