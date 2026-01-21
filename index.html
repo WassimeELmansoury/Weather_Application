@@ -1,60 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Viator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="azert">
-            <div class="logo">
-                <img src="brief1Photo/logo/Viator_logo.png" alt="Viator" id="ViatorLogo">
-                <img src="brief1Photo/logo/powered_by_logo.svg" alt="Powered by Tripadvisor" id="PoweredLoge">
-            </div>
-            <nav class="nav">
-                <h1>Discover</h1>
-            </nav>
-        </div>
-        <div class="user">
-            <img src="Images/user.png" alt="User account" id="iconUser">
-        </div>
-    </header>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Météo Semaine</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="background-image-blur"></div>
 
-    <section class="hero">
-        <div class="container">
-        <h1 class="hero-title">Do more with Viator</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Where to?">
-            <input type="date">
-            <button>
-                <img src="Images/search.png" alt="Search" id="SearchIcon">
-            </button>
-        </div>
-        </div>
-    </section>
+        <h1 class="title">Météo Semaine</h1>
 
-    <section class="book-section">
-        <h2>Why book with Viator?</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="Images/phone-call.png" alt="Support" class="icons">
-                <h3>24/7 customer support</h3>
-                <p>No matter the time zone, we're here to help.</p>
-            </div>
+        <div class="meteo-container">
+            
+            <section class="part-gouche">
+                <div class="situation-meteo">
+                    <img src="./amcharts_weather_icons_1.0.0/animated/cloudy-day-3.svg" alt="icone météo">
+                    
+                    <div class="localisation-title-gouche">
+                    <p id="iconeLocal"><img src="./images/location.png" alt="localisation icone">Localisation</p>
+                    </div>
+                    <div class="search-container">
 
-            <div class="card">
-                <img src="Images/parachute.png" alt="Rewards" class="icons">
-                <h3>Earn rewards</h3>
-                <p>Explore, earn, redeem, and repeat with our loyalty program.</p>
-            </div>
+                        <div class="recherch-tab">
+                            <input id="input" type="search" placeholder="Rechercher une ville" class="Recherche-input">
+                            <button class="button"><img src="./images/search.png" alt="recherche-ville"></button>
+    
+                        </div>
+                    </div>
+                </div>
 
-            <div class="card">
-                <img src="Images/star.png" alt="Reviews" class="icons">
-                <h3>Millions of reviews</h3>
-                <p>Plan and book with confidence using reviews from fellow travelers.</p>
-            </div>
+            </section>
+                        
+            <section class="part-droite">
+                    <div class="info-Haut">
+                        <div class="localisation-title-droite">
+                            <p class="city" id="iconeLocal"><img src="./images/location.png" alt="localisation icone">Localisation</p>
+                        </div>
+                        <div class="date">Lundi, 12 Déc 2025</div>
+                    </div>
+                        <div class="info-todaye">
+                            <div class="meteo-info">
+                                <div class="Température">14°</div>
+                                <div class="condition">Nuageux</div>
+                            </div>
+                            <div class="weather-stats">
+                                <div class="Vitesse-Vent"><img src="./images/air.png" alt="Vitesse de Vent">5 km/h</div>
+                                <div class="Humidité"><img src="./images/water_drop.png" alt="Humidité">30 %</div>
+                            </div>
+                        </div>
+                    <div class="next-day">
+                        <div class="day">
+                            <div class="day-name">Mar</div>
+                            <img class="day-icon" src="./amcharts_weather_icons_1.0.0/animated/rainy-1.svg" alt="weather">
+                            <div class="day-temp">5°</div>
+                        </div>
+                        <div class="day">
+                            <div class="day-name">Merc</div>
+                            <img class="day-icon" src="./amcharts_weather_icons_1.0.0/animated/day.svg" alt="sun">
+                            <div class="day-temp">21°</div>
+                        </div>
+                        <div class="day">
+                            <div class="day-name">Jeu</div>
+                            <img class="day-icon" src="./amcharts_weather_icons_1.0.0/animated/snowy-6.svg" alt="snow">
+                            <div class="day-temp">11°</div>
+                        </div>
+
+                    </div>
+                                        
+            </section>           
+
+        
         </div>
-    </section>
-</body>
+        </body>
+    <script src="script.js"></script>
+>>>>>>> e6629838dcd9e001f9de38f7e29e71f3bbe5b475
 </html>
