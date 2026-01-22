@@ -73,20 +73,6 @@ h2{
     justify-content: center;
 }
 
-@media (max-width: 768px){
-    .hero-title{
-        font-size: 24px;
-    }
-
-    .search-box{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .cards{
-        flex-direction: column;
-    }
-}
 .login-section {
     text-align: center;
     margin: 40px 0;
@@ -125,4 +111,18 @@ h2{
     background-color: #eaf7f3;
     padding: 20px;
     border-radius: 10px;
+}
+@media (max-width: 768px){
+    .hero-title{
+        font-size: 24px;
+    }
+
+    .search-box{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
 }
