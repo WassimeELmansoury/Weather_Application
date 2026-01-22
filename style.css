@@ -5,7 +5,7 @@
     padding-right: 8%;
 }
 .logo{
-    display: flexbox;
+    display: flex;
     justify-content: space-between;
     width:50px;
 }
@@ -59,7 +59,8 @@
 }
 .cards{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly
+
 }
 .azert{
     width: 300px;
@@ -84,6 +85,7 @@ h2{
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
+    
 }
 
 .login-box a {
