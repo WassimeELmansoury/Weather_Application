@@ -39,6 +39,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    cursor: pointer;
 }
 #iconUser{
     width: 50px;
@@ -58,7 +59,7 @@
 }
 .cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .azert{
     width: 300px;
@@ -112,6 +113,37 @@ h2{
     padding: 20px;
     border-radius: 10px;
 }
+.destinations-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.destinations-section h2 {
+    margin-bottom: 20px;
+}
+
+.destinations-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.destinations-grid img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cancellation {
+    background-color: #eaf7f3;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
 @media (max-width: 768px){
     .hero-title{
         font-size: 24px;
